@@ -26,7 +26,7 @@ exports.getAllUsers = async (req, res, next) => {
 
    try {
       let result = await connection.query(sql);
-      res.status(200).json({
+      res.status(200).send({
          users: result
       });
    } catch (error) {

@@ -5,6 +5,6 @@ router.post('/', postsController.createPost);
 router.get('/', postsController.getAllPosts);
 router.get('/:postId', postsController.getPost);
 router.patch('/:postId', postsController.updatePost);
-router.delete('/:postId');
+router.delete('/:postId', postsController.deletePost);
 
 module.exports = router;

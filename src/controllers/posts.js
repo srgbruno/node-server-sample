@@ -25,7 +25,7 @@ exports.getAllPosts = (req, res, next) => {
 
    connection.query(sql)
       .then(result => {
-         res.status(200).json({
+         res.status(200).send({
             posts: result
          })
       })
