@@ -20,5 +20,5 @@ app.use((err, req, res, next) => {
    });
 });
 
-const PORT = process.env.port || 8000;
+const PORT = process.env.port || 6000;
 app.listen(PORT, console.log(`Server started on port ${PORT}`));
