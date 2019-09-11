@@ -1,0 +1,26 @@
+{
+  "name": "server-sample",
+  "version": "1.0.0",
+  "description": "A node server application sample",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "keywords": [
+    "node",
+    "server",
+    "express",
+    "sql"
+  ],
+  "author": "srgbruno",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "promise-mysql": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
