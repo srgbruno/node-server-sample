@@ -1,12 +1,11 @@
 const mysql = require('promise-mysql');
 
 const connection = mysql.createPool({
-   host: 'localhost',
+   host: 'db',
    port: '3306',
-   user: 'feed_admin',
-   password: 'feed',
+   user: 'root',
+   password: 'root',
    database: 'Feed',
-   socketPath: '/opt/lampp/var/mysql/mysql.sock',
    multipleStatements: true
 });
 
