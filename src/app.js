@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
    redisClient.get('count', (err, count) => {
       res.send({
          success: true,
-         message: 'Hi there, welcome to my new API!',
+         message: 'Hi there, welcome to my API!',
          visits: count
       });
       redisClient.set('count', parseInt(count) + 1);
